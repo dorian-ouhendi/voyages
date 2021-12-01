@@ -1,0 +1,49 @@
+* {
+    margin: 0%;
+    padding: 0%;
+box-sizing: border-box;
+background-color: wheat;
+text-align: center;
+}
+h1{
+    font-size: 400%;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+}
+.bordure {
+    background-color: wheat;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+}
+.bordure img {
+    width: 5%;
+}
+.conteiner {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: black;
+    font-size: 45px;
+    color: blanchedalmond;
+    padding: 13px;
+}
+.item {
+    background-color:saddlebrown;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    text-align: center;
+    padding: 10px;
+    font-family: fantasy;
+}
+.évènement {
+    display: grid;
+    justify-content: center;
+    padding: 30px;
+}
+.information {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.petit text {
+    text-align: center;
+}
