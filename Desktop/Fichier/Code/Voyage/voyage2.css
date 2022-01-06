@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: black;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #8f797975;
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #ffffff9a;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .9);
+    height: 10vh;
+    align-items: center;
+}
+nav a{
+    text-decoration: none;
+    color: rgb(226, 240, 224);
+    font-size: 20px;
+}
+    #btn-1:checked ~ .slider-controls label[for="btn-1"],
+    #btn-2:checked ~ .slider-controls label[for="btn-2"],
+    #btn-3:checked ~ .slider-controls label[for="btn-3"] { 
+        background-color: #666;
+}
+#btn-1:checked ~ .slider-inner .slider-slides {
+    transform: translate(0);
+}
+#btn-2:checked ~ .slider-inner .slider-slides {
+    transform: translate(-950px);
+}
+#btn-3:checked ~ .slider-inner .slider-slides {
+    transform: translate(-1900px);
+}
+.custom-btn {
+    width: 130px;
+    height: 50px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+}
+.btn-10 {
+  background: linear-gradient(0deg, rgb(214, 106, 5) 0%,  rgb(208, 39, 20)100%);
+  color: #fff;
+  border: none;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+.btn-10:after {
+  position: absolute;
+  content: " ";
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  transition: all 0.4s ease;
+  -webkit-transform: scale(.1);
+  transform: scale(.1);
+}
+.btn-10:hover {
+  color: #fff;
+  border: none;
+  background: transparent;
+}
+.btn-10:hover:after {
+background: linear-gradient(0deg, rgb(223, 51, 21) 0%,  rgb(223, 100, 6)100%);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+main {
+    display: flex;
+    align-items: center;
+    background-image: url(https://img.freepik.com/vecteurs-libre/drapeau-espagnol-identite-nationale-du-pays-espagne_8071-1617.jpg?size=626&ext=jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+}
+
+.slider-box {
+    width: 950px;
+    height: 550px;
+    margin: 120px auto;
+}
+.slider {
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .9);
+}
+.slider input[type=radio] {
+    display: none;
+}
+.slider-inner {
+    overflow: hidden;
+}
+.slider-slides{
+    width: 300%;
+    transition: transform 1.1s ease;
+}
+.slider-slides img {
+    float: left;
+    width: 950px;
+    height: 450px; 
+    transition: 3s;
+}
+.slider-controls {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: -40px;
+    z-index: 100;
+    text-align: center;
+}
+.slider-controls label {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: 0 5px;
+    background: #ccc;
+    cursor: pointer;   
+    border: 1px solid rgba(201, 23, 23, 0.693);
+    border-radius: 50%;    
+    box-shadow: 0px 0px 9px rgba(0,0,0,.8);    
+    transition: background-color .2s;
+}
+.slider-controls label:hover {
+    background-color: rgb(216, 132, 22);
+}
+.slider-slides img:hover {
+    transform: scale(1.3);
+}
+.text-box {
+    margin-bottom: 10%;
+    font-size: 150%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    text-align: center;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, .9);
+    color: wheat;
+    background-color: rgba(0, 0, 0, 0.233);
+    position: absolute;
+    margin-top: 42%;
+    transition: 4s;
+    border-radius: 10px;
+}
+.text-hover {
+    color: red;
+    text-decoration: none;
+    position: relative;
+}
+.text-box:hover {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.726);
+    transform:scale(1.1) ;
+    box-shadow: 0 15px 65px rgba(0, 0, 0, .9);
+}
