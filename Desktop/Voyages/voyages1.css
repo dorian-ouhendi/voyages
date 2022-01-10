@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.corps {
+    display: flex;
+    text-align: center;
+    position: relative;
+    text-decoration: hidden;
+}
+.background {
+    overflow: hidden;
+    width: 100%;
+    height: 754px;
+    position: relative;
+}
+.corps p {
+    font-size: 300%;
+    position: absolute;
+    color:beige;
+    left: 20%;
+    top: 16%;
+    font-family:serif;
+    opacity: 0.07;
+    transition: 1.5s;
+}
+.corps p:hover{
+    opacity: 1;
+}
+.corps h1{
+    position: absolute;
+    color: black;
+    font-family: monospace;
+    font-size: 300%;
+}
